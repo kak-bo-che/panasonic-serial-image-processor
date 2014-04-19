@@ -12,6 +12,8 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Identify and move files uploaded from a panasonic network camera to a subdirectory based on date}
   gem.homepage      = ""
 
+  gem.add_dependency 'trollop'
+  gem.add_dependency 'solar_noon'
   gem.add_development_dependency 'rake'
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
